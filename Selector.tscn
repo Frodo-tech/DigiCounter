@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvvk7874fe2cd"]
+
+[ext_resource type="PackedScene" uid="uid://bhmgi8wex0u31" path="res://number.tscn" id="1_mgkxo"]
+[ext_resource type="Script" path="res://number.gd" id="2_ot3cd"]
+
+[node name="Point1" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(60, 60)
+
+[node name="Number" parent="." instance=ExtResource("1_mgkxo")]
+scale = Vector2(0.32, 0.32)
+script = ExtResource("2_ot3cd")
+
+[connection signal="pressed" from="Number" to="Number" method="_on_pressed"]
+
+[editable path="Number"]

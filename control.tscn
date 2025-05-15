@@ -1,0 +1,376 @@
+[gd_scene load_steps=6 format=3 uid="uid://bkfg6a2bxqfj3"]
+
+[ext_resource type="PackedScene" uid="uid://dvvk7874fe2cd" path="res://Selector.tscn" id="1_iqdx1"]
+[ext_resource type="PackedScene" uid="uid://bb6odr1mgrtf" path="res://blank.tscn" id="1_y44i8"]
+[ext_resource type="PackedScene" uid="uid://d0os6rdvipl3f" path="res://sprite_2d.tscn" id="3_oirt0"]
+[ext_resource type="Script" path="res://counter.gd" id="4_1jaye"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_rtja2"]
+blend_mode = 1
+
+[node name="Node" type="Node"]
+
+[node name="Counter" parent="." groups=["counter"] instance=ExtResource("3_oirt0")]
+material = SubResource("CanvasItemMaterial_rtja2")
+script = ExtResource("4_1jaye")
+
+[node name="Control" type="BoxContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="Control/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="TopRow" type="HBoxContainer" parent="Control/VBoxContainer/PanelContainer3"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="Control/VBoxContainer/PanelContainer3/TopRow"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Blank" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank2" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank3" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank4" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank5" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank6" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Point1" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer3/TopRow/Point1/Number" index="0"]
+rotation = 3.14159
+text = "10"
+
+[node name="Point2" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer3/TopRow/Point2/Number" index="0"]
+rotation = 3.14159
+text = "9"
+
+[node name="Point3" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer3/TopRow/Point3/Number" index="0"]
+rotation = 3.14159
+text = "8"
+
+[node name="Point4" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer3/TopRow/Point4/Number" index="0"]
+rotation = 3.14159
+text = "7"
+
+[node name="Point5" parent="Control/VBoxContainer/PanelContainer3/TopRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer3/TopRow/Point5/Number" index="0"]
+rotation = 3.14159
+text = "6"
+
+[node name="VSeparator" type="VSeparator" parent="Control/VBoxContainer/PanelContainer3/TopRow"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator" type="HSeparator" parent="Control/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="PanelContainer2" type="PanelContainer" parent="Control/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="MiddleRow" type="HBoxContainer" parent="Control/VBoxContainer/PanelContainer2"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="Control/VBoxContainer/PanelContainer2/MiddleRow"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Point1" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point1/Number" index="0"]
+text = "5"
+
+[node name="Point2" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point2/Number" index="0"]
+text = "4"
+
+[node name="Point3" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point3/Number" index="0"]
+text = "3"
+
+[node name="Point4" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point4/Number" index="0"]
+text = "2"
+
+[node name="Point5" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point5/Number" index="0"]
+text = "1"
+
+[node name="0" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Point7" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point7/Number" index="0"]
+rotation = 3.14159
+text = "1"
+
+[node name="Point8" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point8/Number" index="0"]
+rotation = 3.14159
+text = "2"
+
+[node name="Point9" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point9/Number" index="0"]
+rotation = 3.14159
+text = "3"
+
+[node name="Point10" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point10/Number" index="0"]
+rotation = 3.14159
+text = "4"
+
+[node name="Point11" parent="Control/VBoxContainer/PanelContainer2/MiddleRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer2/MiddleRow/Point11/Number" index="0"]
+rotation = 3.14159
+text = "5"
+
+[node name="VSeparator" type="VSeparator" parent="Control/VBoxContainer/PanelContainer2/MiddleRow"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="Control/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Control/VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+
+[node name="BottomRow" type="HBoxContainer" parent="Control/VBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="Control/VBoxContainer/PanelContainer/BottomRow"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Point1" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer/BottomRow/Point1/Number" index="0"]
+text = "6"
+
+[node name="Point2" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer/BottomRow/Point2/Number" index="0"]
+text = "7"
+
+[node name="Point3" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer/BottomRow/Point3/Number" index="0"]
+text = "8"
+
+[node name="Point4" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer/BottomRow/Point4/Number" index="0"]
+text = "9"
+
+[node name="Point5" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_iqdx1")]
+layout_mode = 2
+size_flags_horizontal = 7
+size_flags_vertical = 5
+
+[node name="Label" parent="Control/VBoxContainer/PanelContainer/BottomRow/Point5/Number" index="0"]
+text = "10"
+
+[node name="Blank" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank2" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank3" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank4" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank5" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="Blank6" parent="Control/VBoxContainer/PanelContainer/BottomRow" instance=ExtResource("1_y44i8")]
+layout_mode = 2
+size_flags_horizontal = 7
+
+[node name="VSeparator" type="VSeparator" parent="Control/VBoxContainer/PanelContainer/BottomRow"]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.243137, 0.243137, 0.443137, 1)
+
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point1"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point1/Number"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point2"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point2/Number"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point3"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point3/Number"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point4"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point4/Number"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point5"]
+[editable path="Control/VBoxContainer/PanelContainer3/TopRow/Point5/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point1"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point1/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point2"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point2/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point3"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point3/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point4"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point4/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point5"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point5/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point7"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point7/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point8"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point8/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point9"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point9/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point10"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point10/Number"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point11"]
+[editable path="Control/VBoxContainer/PanelContainer2/MiddleRow/Point11/Number"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point1"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point1/Number"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point2"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point2/Number"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point3"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point3/Number"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point4"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point4/Number"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point5"]
+[editable path="Control/VBoxContainer/PanelContainer/BottomRow/Point5/Number"]

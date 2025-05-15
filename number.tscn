@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhmgi8wex0u31"]
+
+[ext_resource type="Texture2D" uid="uid://du7gx5o50u1x2" path="res://circle-svgrepo-com (1).svg" id="1_ebmbh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xcsw7"]
+radius = 40.0
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1kb4f"]
+blend_mode = 2
+
+[node name="Number" type="TouchScreenButton" groups=["buttons"]]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 6
+texture_normal = ExtResource("1_ebmbh")
+shape = SubResource("CircleShape2D_xcsw7")
+
+[node name="Label" type="Label" parent="."]
+material = SubResource("CanvasItemMaterial_1kb4f")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -41.5
+offset_top = -141.0
+offset_right = 41.5
+offset_bottom = 141.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(71.5, 171)
+theme_override_font_sizes/font_size = 35
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1

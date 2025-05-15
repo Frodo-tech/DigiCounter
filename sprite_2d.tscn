@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0os6rdvipl3f"]
+
+[ext_resource type="Texture2D" uid="uid://dcwdktvbltsaw" path="res://spherefill2.png" id="1_plbq5"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 4
+scale = Vector2(0.469, 0.469)
+texture = ExtResource("1_plbq5")
